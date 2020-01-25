@@ -10,5 +10,5 @@ def arabic_to_roman(number):
     return temp
 
 
-if __name__ == '__main__':
-    print(arabic_to_roman(17))
+def test_fun():
+    assert arabic_to_roman(234) == 'CV'
