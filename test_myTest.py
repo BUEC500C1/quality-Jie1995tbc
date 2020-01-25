@@ -11,4 +11,4 @@ def arabic_to_roman(number):
 
 
 def test_fun():
-    assert arabic_to_roman(234) == 'CV'
+    assert arabic_to_roman(1) == 'I'
