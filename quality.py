@@ -3,8 +3,10 @@ def arabic_to_roman(number):
     str_list = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X",
                 "IX", "V", "IV", "I"]
     temp = ''
+    if not isinstace(number, int):
+        return "ERROR: It's not an int"
     if number > 4000 or number < 1:
-        return "ERROR: OVERFLOW"
+        return "ERROR: It's not in the range(1,4000)"
     for i in range(len(num_list)):
         while(number >= num_list[i]):
             number -= num_list[i]
